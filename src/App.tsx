@@ -1,4 +1,5 @@
 import { InfinitePostList } from "@/components/scroll/InfinitePostList"
+import { RegistrationForm } from "@/components/form/RegistrationForm"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 function App() {
@@ -20,9 +21,7 @@ function App() {
           </TabsContent>
           
           <TabsContent value="register" className="mt-6">
-            <div className="text-center p-8 bg-white rounded-lg">
-              Registration form will be here
-            </div>
+            <RegistrationForm />
           </TabsContent>
         </Tabs>
       </div>
