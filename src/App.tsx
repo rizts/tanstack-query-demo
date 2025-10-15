@@ -1,19 +1,31 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { InfinitePostList } from "@/components/scroll/InfinitePostList"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
-      <Card className="w-96">
-        <CardHeader>
-          <CardTitle>shadcn/ui Works! 🎉</CardTitle>
-          <CardDescription>Testing Button and Card components</CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <Button>Click Me</Button>
-          <Button variant="outline">Outline Button</Button>
-        </CardContent>
-      </Card>
+    <div className="min-h-screen bg-gray-100 py-8">
+      <div className="max-w-3xl mx-auto px-4">
+        <h1 className="text-3xl font-bold text-center mb-8">
+          TanStack Query Demo
+        </h1>
+        
+        <Tabs defaultValue="posts" className="w-full">
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="posts">Posts</TabsTrigger>
+            <TabsTrigger value="register">Register</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="posts" className="mt-6">
+            <InfinitePostList />
+          </TabsContent>
+          
+          <TabsContent value="register" className="mt-6">
+            <div className="text-center p-8 bg-white rounded-lg">
+              Registration form will be here
+            </div>
+          </TabsContent>
+        </Tabs>
+      </div>
     </div>
   )
 }
