@@ -1,19 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-600">
-          Tailwind Works! 🎉
-        </h1>
-      </div>
-    </>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-8">
+      <Card className="w-96">
+        <CardHeader>
+          <CardTitle>shadcn/ui Works! 🎉</CardTitle>
+          <CardDescription>Testing Button and Card components</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <Button>Click Me</Button>
+          <Button variant="outline">Outline Button</Button>
+        </CardContent>
+      </Card>
+    </div>
   )
 }
 
