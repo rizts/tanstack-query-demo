@@ -13,7 +13,7 @@ npm create vite@latest tanstack-query-demo -- --template react
 
 cd tanstack-query-demo
 
-# Installl dependencies
+# Install dependencies
 npm install @tanstack/react-query react-hook-form zod @hookform/resolvers
 npm install -D typescript @types/react @types/react-dom
 npm install -D tailwindcss postcss autoprefixer
@@ -93,7 +93,7 @@ Edit `src/index.css`:
 @import "tailwindcss";
 ```
 
-## 4. Installl shadcn/ui
+## 4. Install shadcn/ui
 
 Init `shadcn`:
 ```bash
@@ -120,7 +120,7 @@ Add component `Tabs`:
 npx shadcn@latest add tabs
 ```
 
-## 5. Installl TanStack Query
+## 5. Install TanStack Query
 
 Install `TanStack Query`:
 ```bash
