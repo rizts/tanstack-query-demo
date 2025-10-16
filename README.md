@@ -208,14 +208,14 @@ src/
 
 
 ## Features
-✅ Infinite scroll dengan TanStack Query
-✅ Set proper Query keys
-✅ Automatic caching
-✅ Prefetching next page
-✅ Using React Hook Form and Form validation with Zod
-✅ Phone number validation
-✅ Auto-disable submit button
-✅ Loading & error states
+* Infinite scroll dengan TanStack Query
+* Set proper Query keys
+* Automatic caching
+* Prefetching next page
+* Using React Hook Form and Form validation with Zod
+* Phone number validation
+* Auto-disable submit button
+* Loading & error states
 
 ## API used:
 - JSONPlaceholder API: https://jsonplaceholder.typicode.com/posts
